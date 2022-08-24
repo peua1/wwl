@@ -1,201 +1,373 @@
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
 
-   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+local EgoId = {
+	[3183249424] = true,
+}
 
-   1. Definitions.
+local fedId = {
+	[3493918687] = true,
+}
 
-      "License" shall mean the terms and conditions for use, reproduction,
-      and distribution as defined by Sections 1 through 9 of this document.
+local ThugId = {
+	[73060874] = true,
+}
 
-      "Licensor" shall mean the copyright owner or entity authorized by
-      the copyright owner that is granting the License.
+local StarId = {
+	[2379016932] = true,
+}
 
-      "Legal Entity" shall mean the union of the acting entity and all
-      other entities that control, are controlled by, or are under common
-      control with that entity. For the purposes of this definition,
-      "control" means (i) the power, direct or indirect, to cause the
-      direction or management of such entity, whether by contract or
-      otherwise, or (ii) ownership of fifty percent (50%) or more of the
-      outstanding shares, or (iii) beneficial ownership of such entity.
+local SkidId = {
+    [136650383] = true,
+    [1089945491] = true,
+    [2762707262] = true,
+    [2978449959] = true,
+}
 
-      "You" (or "Your") shall mean an individual or Legal Entity
-      exercising permissions granted by this License.
+local DiamondId = {
+	[3220879265] = true,
+}
 
-      "Source" form shall mean the preferred form for making modifications,
-      including but not limited to software source code, documentation
-      source, and configuration files.
+local EnemyId = {
+	[2385120614] = true,
+	[341543646] = true,
+	[221000067] = true,
+	[2775350356] = true,
+	[2262338064] = true,
+	[1405753627] = true,
+	[2438906958] = true,
+	[83636696] = true,
+	[544194523] = true,
+	[3487771668] = true,
+	[3446088891] = true,
+	[3342164038] = true,
+	[1867144219] = true,
+	[97556504] = true,
+	[3384127227] = true,
+	[267399500] = true,
+	[91786132] = true,
+	[2403843244] = true,
+	[949283418] = true,
+	[134675472] = true,
+	[960776236] = true,
+	[3086787709] = true,
+	[367166420] = true,
+	[1692101910] = true,
+	[4864500] = true,
+	[3386849890] = true,
+	[453122426] = true,
+	[20462347] = true,
+	[1410800040] = true,
+	[3202577121] = true,
+	[2571188236] = true,
+	[328843502] = true,
+	[3278461981] = true,
+	[342688725] = true,
+	[1468590384] = true,
+	[682509240] = true,
+	[121465084] = true,
+	[1633086711] = true,
+	[2040114056] = true,
+	[471745960] = true,
+	[3434100337] = true,
+	[1411408725] = true,
+	[2359361491] = true,
+	[174868032] = true,
+	[1335230271] = true,
+	[3540161587] = true,
+	[888698208] = true,
+	[3243432953] = true,
+	[2009234256] = true,
+	[2683624084] = true,
+	[2506628287] = true,
+	[3399528770] = true,
+	[2617374443] = true,
+	[996445564] = true,
+	[1746488161] = true,
+	[3601455027] = true,
+	[1611783674] = true,
+	[3112820013] = true,
+	[1242560578] = true,
+	[3086496765] = true,
+	[68263260] = true,
+	[2218216231] = true,
+	[3127146856] = true,
+	[528881291] = true,
+	[530538182] = true,
+	[45814659] = true,
+	[1544533393] = true,
+	[3472680787] = true,
+	[685094860] = true,
+	[80213825] = true,
+	[3107486900] = true,
+	[3167418005] = true,
+	[1765862094] = true,
+	[1070548281] = true,
+	[1602770474] = true,
+	[1414587548] = true,
+	[2237528420] = true,
+	[1328825753] = true,
+	[36566543] = true,
+	[168126690] = true,
+	[2445234227] = true,
+	[1312182760] = true,
+	[3494819300] = true,
+	[2495545290] = true,
+	[883935220] = true,
+	[1462038194] = true,
+	[2412399592] = true,
+	[1140510815] = true,
+	[2381828282] = true,
+	[2319619105] = true,
+	[3451841811] = true,
+	[857874877] = true,
+	[2665259] = true,
+	[60935213] = true,
+	[530191889] = true,
+	[1628316979] = true,
+	[218371205] = true,
+	[2788184005] = true,
+	[3207880708] = true,
+	[2932921962] = true,
+	[273745938] = true,
+	[244902112] = true,
+	[1717819433] = true,
+	[1274852399] = true,
+	[109202930] = true,
+	[3413719745] = true,
+	[3376845876] = true,
+	[2551611755] = true,
+	[2832101336] = true,
+	[3053730650] = true,
+	[1058942985] = true,
+	[3233223400] = true,
+	[2594137875] = true,
+	[140135317] = true,
+	[1937059486] = true,
+	[244331908] = true,
+	[3360782059] = true,
+	[1266167773] = true,
+	[3360799567] = true,
+	[554156590] = true,
+	[79287609] = true,
+	[1786232937] = true,
+	[2512185196] = true,
+	[62639400] = true,
+	[2411740048] = true,
+	[154220234] = true,
+	[2820724269] = true,
+	[1084932595] = true,
+	[490432634] = true,
+	[106067330] = true,
+	[3265710420] = true,
+	[1615343984] = true,
+	[1277602974] = true,
+	[988783311] = true,
+	[2530699406] = true,
+	[1009221814] = true,
+	[3454912230] = true,
+	[315693697] = true,
+	[1547314554] = true,
+	[3140798308] = true,
+	[140573843] = true,
+	[512687855] = true,
+	[1593266270] = true,
+	[723769846] = true,
+	[113080976] = true,
+	[3053468015] = true,
+	[2559076921] = true,
+	[3433205254] = true,
+	[2351021062] = true,
+	[3426663599] = true,
+	[2411807466] = true,
+	[2064677982] = true,
+	[2497869704] = true,
+	[1511465503] = true,
+	[2432531355] = true,
+	[516773317] = true,
+	[2428985663] = true,
+	[145153137] = true,
+	[529565492] = true,
+	[2267519533] = true,
+	[433997337] = true,
+	[1779575445] = true,
+	[260592314] = true,
+	[51630407] = true,
+	[551308151] = true,
+	[3311642098] = true,
+	[2792353533] = true,
+	[2438649895] = true,
+	[14838201] = true,
+	[1227962198] = true,
+	[3227732795] = true,
+	[2309457259] = true,
+	[1840257900] = true,
+	[1796663810] = true,
+	[2049945401] = true,
+	[1253331732] = true,
+	[3366161544] = true,
+	[122697165] = true,
+	[606041098] = true,
+	[2647702356] = true,
+	[2806946180] = true,
+	[1812852714] = true,
+	[1473176319] = true,
+	[73420929] = true,
+	[1225521787] = true,
+	[3332574468] = true,
+	[2345506493] = true,
+	[3246660830] = true,
+	[439282250] = true,
+	[3184748724] = true,
+	[94328598] = true,
+	[2047463614] = true,
+	[843956343] = true,
+	[918939004] = true,
+	[1532808282] = true,
+	[2544695796] = true,
+	[2246732664] = true,
+	[3166770] = true,
+	[2428136673] = true,
+	[2668438061] = true,
+	[1611434354] = true,
+	[1812919636] = true,
+	[1688589423] = true,
+	[58334809] = true,
+	[3180590326] = true,
+	[31467345] = true,
+	[1541594437] = true,
+	[3408167871] = true,
+	[3104697328] = true,
+	[2320562376] = true,
+	[2474125946] = true,
+	[3477168507] = true,
+	[119155790] = true,
+	[2497427553] = true,
+	[1694560377] = true,
+	[3408509457] = true,
+	[2028184805] = true,
+	[2623381231] = true,
+	[478777] = true,
+	[2427047739] = true,
+	[1552193951] = true,
+	[2769662103] = true,
+	[2446098676] = true,
+	[3071372583] = true,
+	[2385850270] = true,
+	[3133107789] = true,
+	[2821000320] = true,
+	[977115426] = true,
+	[2531755962] = true,
+	[2661379124] = true,
+	[1919835164] = true,
+	[3320132819] = true,
+	[293036178] = true,
+	[3174968924] = true,
+	[340705194] = true,
+	[1170138060] = true,
+	[1586704123] = true,
+	[3443727509] = true,
+	[586098829] = true,
+	[3166683644] = true,
+	[153542023] = true,
+	[135021150] = true,
+	[479546802] = true,
+	[298866861] = true,
+	[1481297767] = true,
+	[382013092] = true,
+	[607924934] = true,
+	[356164182] = true,
+	[546512748] = true,
+	[3236769493] = true,
+	[1465175253] = true,
+	[1332866176] = true,
+	[2522365474] = true,
+	[84084627] = true,
+	[338135727] = true,
+	[2825375341] = true,
+	[8301349] = true,
+	[2631031357] = true,
+	[1043434684] = true,
+	[129557982] = true,
+	[3479276948] = true,
+	[683274066] = true,
+	[3395398263] = true,
+	[2302262279] = true,
+	[2846189189] = true,
+	[550053145] = true,
+	[462108732] = true,
+	[2794160137] = true,
+	[910405271] = true,
+	[1969510238] = true,
+	[264123041] = true,
+	[265598055] = true,
+	[533365905] = true,
+	[2275879529] = true,
+	[2294188446] = true,
+	[495699690] = true,
+	[2912721956] = true,
+	[958004396] = true,
+	[1697584206] = true,
+	[2505265155] = true,
+	[483721696] = true,
+	[134337262] = true,
+	[122879189] = true,
+	[2411552526] = true,
+	[3344476890] = true,
+	[1713873272] = true,
+	[3499156945] = true,
+} 
 
-      "Object" form shall mean any form resulting from mechanical
-      transformation or translation of a Source form, including but
-      not limited to compiled object code, generated documentation,
-      and conversions to other media types.
-
-      "Work" shall mean the work of authorship, whether in Source or
-      Object form, made available under the License, as indicated by a
-      copyright notice that is included in or attached to the work
-      (an example is provided in the Appendix below).
-
-      "Derivative Works" shall mean any work, whether in Source or Object
-      form, that is based on (or derived from) the Work and for which the
-      editorial revisions, annotations, elaborations, or other modifications
-      represent, as a whole, an original work of authorship. For the purposes
-      of this License, Derivative Works shall not include works that remain
-      separable from, or merely link (or bind by name) to the interfaces of,
-      the Work and Derivative Works thereof.
-
-      "Contribution" shall mean any work of authorship, including
-      the original version of the Work and any modifications or additions
-      to that Work or Derivative Works thereof, that is intentionally
-      submitted to Licensor for inclusion in the Work by the copyright owner
-      or by an individual or Legal Entity authorized to submit on behalf of
-      the copyright owner. For the purposes of this definition, "submitted"
-      means any form of electronic, verbal, or written communication sent
-      to the Licensor or its representatives, including but not limited to
-      communication on electronic mailing lists, source code control systems,
-      and issue tracking systems that are managed by, or on behalf of, the
-      Licensor for the purpose of discussing and improving the Work, but
-      excluding communication that is conspicuously marked or otherwise
-      designated in writing by the copyright owner as "Not a Contribution."
-
-      "Contributor" shall mean Licensor and any individual or Legal Entity
-      on behalf of whom a Contribution has been received by Licensor and
-      subsequently incorporated within the Work.
-
-   2. Grant of Copyright License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      copyright license to reproduce, prepare Derivative Works of,
-      publicly display, publicly perform, sublicense, and distribute the
-      Work and such Derivative Works in Source or Object form.
-
-   3. Grant of Patent License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      (except as stated in this section) patent license to make, have made,
-      use, offer to sell, sell, import, and otherwise transfer the Work,
-      where such license applies only to those patent claims licensable
-      by such Contributor that are necessarily infringed by their
-      Contribution(s) alone or by combination of their Contribution(s)
-      with the Work to which such Contribution(s) was submitted. If You
-      institute patent litigation against any entity (including a
-      cross-claim or counterclaim in a lawsuit) alleging that the Work
-      or a Contribution incorporated within the Work constitutes direct
-      or contributory patent infringement, then any patent licenses
-      granted to You under this License for that Work shall terminate
-      as of the date such litigation is filed.
-
-   4. Redistribution. You may reproduce and distribute copies of the
-      Work or Derivative Works thereof in any medium, with or without
-      modifications, and in Source or Object form, provided that You
-      meet the following conditions:
-
-      (a) You must give any other recipients of the Work or
-          Derivative Works a copy of this License; and
-
-      (b) You must cause any modified files to carry prominent notices
-          stating that You changed the files; and
-
-      (c) You must retain, in the Source form of any Derivative Works
-          that You distribute, all copyright, patent, trademark, and
-          attribution notices from the Source form of the Work,
-          excluding those notices that do not pertain to any part of
-          the Derivative Works; and
-
-      (d) If the Work includes a "NOTICE" text file as part of its
-          distribution, then any Derivative Works that You distribute must
-          include a readable copy of the attribution notices contained
-          within such NOTICE file, excluding those notices that do not
-          pertain to any part of the Derivative Works, in at least one
-          of the following places: within a NOTICE text file distributed
-          as part of the Derivative Works; within the Source form or
-          documentation, if provided along with the Derivative Works; or,
-          within a display generated by the Derivative Works, if and
-          wherever such third-party notices normally appear. The contents
-          of the NOTICE file are for informational purposes only and
-          do not modify the License. You may add Your own attribution
-          notices within Derivative Works that You distribute, alongside
-          or as an addendum to the NOTICE text from the Work, provided
-          that such additional attribution notices cannot be construed
-          as modifying the License.
-
-      You may add Your own copyright statement to Your modifications and
-      may provide additional or different license terms and conditions
-      for use, reproduction, or distribution of Your modifications, or
-      for any such Derivative Works as a whole, provided Your use,
-      reproduction, and distribution of the Work otherwise complies with
-      the conditions stated in this License.
-
-   5. Submission of Contributions. Unless You explicitly state otherwise,
-      any Contribution intentionally submitted for inclusion in the Work
-      by You to the Licensor shall be under the terms and conditions of
-      this License, without any additional terms or conditions.
-      Notwithstanding the above, nothing herein shall supersede or modify
-      the terms of any separate license agreement you may have executed
-      with Licensor regarding such Contributions.
-
-   6. Trademarks. This License does not grant permission to use the trade
-      names, trademarks, service marks, or product names of the Licensor,
-      except as required for reasonable and customary use in describing the
-      origin of the Work and reproducing the content of the NOTICE file.
-
-   7. Disclaimer of Warranty. Unless required by applicable law or
-      agreed to in writing, Licensor provides the Work (and each
-      Contributor provides its Contributions) on an "AS IS" BASIS,
-      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-      implied, including, without limitation, any warranties or conditions
-      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
-      PARTICULAR PURPOSE. You are solely responsible for determining the
-      appropriateness of using or redistributing the Work and assume any
-      risks associated with Your exercise of permissions under this License.
-
-   8. Limitation of Liability. In no event and under no legal theory,
-      whether in tort (including negligence), contract, or otherwise,
-      unless required by applicable law (such as deliberate and grossly
-      negligent acts) or agreed to in writing, shall any Contributor be
-      liable to You for damages, including any direct, indirect, special,
-      incidental, or consequential damages of any character arising as a
-      result of this License or out of the use or inability to use the
-      Work (including but not limited to damages for loss of goodwill,
-      work stoppage, computer failure or malfunction, or any and all
-      other commercial damages or losses), even if such Contributor
-      has been advised of the possibility of such damages.
-
-   9. Accepting Warranty or Additional Liability. While redistributing
-      the Work or Derivative Works thereof, You may choose to offer,
-      and charge a fee for, acceptance of support, warranty, indemnity,
-      or other liability obligations and/or rights consistent with this
-      License. However, in accepting such obligations, You may act only
-      on Your own behalf and on Your sole responsibility, not on behalf
-      of any other Contributor, and only if You agree to indemnify,
-      defend, and hold each Contributor harmless for any liability
-      incurred by, or claims asserted against, such Contributor by reason
-      of your accepting any such warranty or additional liability.
-
-   END OF TERMS AND CONDITIONS
-
-   APPENDIX: How to apply the Apache License to your work.
-
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "[]"
-      replaced with your own identifying information. (Don't include
-      the brackets!)  The text should be enclosed in the appropriate
-      comment syntax for the file format. We also recommend that a
-      file or class name and description of purpose be included on the
-      same "printed page" as the copyright notice for easier
-      identification within third-party archives.
-
-   Copyright [yyyy] [name of copyright owner]
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+function premium()
+	for _,v in pairs(game:GetService('Players'):GetChildren()) do
+		if StarId[v.UserId] then
+			if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]'..v.DisplayName)
+				end
+			end
+		elseif SkidId[v.UserId] then
+			if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💀]'..v.DisplayName)
+				end
+			end
+        elseif ThugId[v.UserId] then
+			if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎THUGHUNTER😎]'..v.DisplayName)
+				end
+			end
+	elseif EgoId[v.UserId] then
+			if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🔥child molester🔥]'..v.DisplayName)
+				end
+			end
+        elseif fedId[v.UserId] then
+			if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⚧fed⚧]'..v.DisplayName)
+				end
+			end
+		elseif DiamondId[v.UserId] then
+			if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎GAYX ADMIN💎]'..v.DisplayName)
+				end
+			end
+		elseif EnemyId[v.UserId] then
+			if v.Character then
+				if v.Character.Parent.Name == 'Players' then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('🤡 RAYX Premium User 🤡')
+				end
+			end
+		elseif v.Character then
+			if v.Character.Parent.Name == 'Players' then
+				if not v.Character.UpperTorso:FindFirstChild('BodyBackAttachment') then
+					v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤡Injected🤡]'..v.DisplayName)
+				end
+			end
+		end
+	end
+end
+local success,err = pcall(premium)
+return StarId
